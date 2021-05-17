@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="randerer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Todo</title>
+    <meta name="keywords" content="提醒事项">
+    <meta name="description" content="提醒事项">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <script>
+      let scale = 1.0 / window.devicePixelRatio;
+      let text = `<meta name="viewport" content="width=device-width, initial-scale=${scale}, maximum-scale=${scale}, minimum-scale=${scale}, user-scalable=no">`;
+      document.write(text);
+      document.documentElement.style.fontSize = window.innerWidth / 7.5 + "px";
+      document.documentElement.setAttribute('data-dpr', window.devicePixelRatio + '');
+      document.documentElement.setAttribute('data-theme','theme');
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
